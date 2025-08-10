@@ -1,0 +1,827 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 120px 0 80px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.headline {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.sub-headline {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    opacity: 0.95;
+}
+
+/* Buttons */
+.cta-button {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    color: white;
+    border: none;
+    padding: 18px 35px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255, 107, 107, 0.4);
+}
+
+.cta-button.large {
+    padding: 22px 45px;
+    font-size: 1.2rem;
+}
+
+.cta-button.extra-large {
+    padding: 25px 50px;
+    font-size: 1.3rem;
+}
+
+.cta-container {
+    margin: 2rem 0;
+}
+
+/* Story Section */
+.story {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.story h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.story-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.story-content p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+/* Pain Points Section */
+.pain-points {
+    padding: 80px 0;
+    background: white;
+}
+
+.pain-points h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.pain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pain-item {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-left: 4px solid #ff6b6b;
+}
+
+.pain-item:hover {
+    transform: translateY(-5px);
+}
+
+.pain-item i {
+    font-size: 2.5rem;
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+}
+
+.pain-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Solution Section */
+.solution {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+.solution h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.solution-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.solution-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.stat-item {
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.stat-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.stat-text {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Value Proposition Section */
+.value-proposition {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.value-proposition h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.value-item {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-top: 4px solid #667eea;
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+}
+
+.value-icon {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.value-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.value-item h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.value-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.value-price {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.pricing-summary {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    border: 3px solid #667eea;
+}
+
+.total-value, .discount-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.total-value .amount {
+    text-decoration: line-through;
+    color: #999;
+    font-weight: 600;
+}
+
+.discount-price .amount.highlight {
+    color: #e74c3c;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.savings {
+    background: #27ae60;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.savings-text {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Social Proof Section */
+.social-proof {
+    padding: 80px 0;
+    background: white;
+}
+
+.social-proof h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial {
+    background: #f8f9fa;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border-left: 4px solid #27ae60;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.testimonial-author strong {
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.testimonial-author span {
+    display: block;
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.testimonial-highlight {
+    background: #27ae60;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* Comparison Section */
+.comparison {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.comparison h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.comparison-table {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th {
+    background: #2c3e50;
+    color: white;
+    padding: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.comparison-table th.our-product {
+    background: #27ae60;
+}
+
+.comparison-table td {
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.comparison-table td:first-child {
+    text-align: left;
+    font-weight: 600;
+    background: #f8f9fa;
+}
+
+.comparison-table .competitor {
+    color: #e74c3c;
+}
+
+.comparison-table .our-product {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+.comparison-table .our-product i {
+    margin-right: 0.5rem;
+}
+
+/* Urgency Section */
+.urgency {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    color: white;
+    text-align: center;
+}
+
+.urgency h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.urgency-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.scarcity-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.scarcity-item {
+    background: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.scarcity-item i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.scarcity-item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.countdown-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.countdown-item {
+    background: rgba(255,255,255,0.2);
+    padding: 1rem;
+    border-radius: 10px;
+    min-width: 80px;
+    backdrop-filter: blur(10px);
+}
+
+.countdown-item span {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.countdown-item label {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+.urgency-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* Guarantee Section */
+.guarantee {
+    padding: 80px 0;
+    background: white;
+}
+
+.guarantee h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.guarantee-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.guarantee-badge {
+    background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+    color: white;
+    padding: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    min-width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(39, 174, 96, 0.3);
+}
+
+.guarantee-badge i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.guarantee-badge span {
+    font-size: 2rem;
+    font-weight: 800;
+    display: block;
+}
+
+.guarantee-badge small {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.guarantee-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.guarantee-text p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+/* Final CTA Section */
+.final-cta {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.final-pricing {
+    margin: 2rem 0;
+}
+
+.price-comparison {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.original-price {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.current-price {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.security-badges {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255,255,255,0.1);
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+}
+
+.badge i {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+.footer {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .headline {
+        font-size: 2rem;
+    }
+    
+    .sub-headline {
+        font-size: 1.1rem;
+    }
+    
+    .hero {
+        padding: 100px 0 60px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .pain-grid,
+    .value-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .guarantee-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .guarantee-badge {
+        margin: 0 auto;
+    }
+    
+    .security-badges {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .countdown {
+        flex-wrap: wrap;
+    }
+    
+    .comparison-table {
+        overflow-x: auto;
+    }
+    
+    .price-comparison {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .current-price {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .headline {
+        font-size: 1.5rem;
+    }
+    
+    .cta-button {
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+    
+    .cta-button.large {
+        padding: 18px 30px;
+        font-size: 1.1rem;
+    }
+    
+    .cta-button.extra-large {
+        padding: 20px 35px;
+        font-size: 1.2rem;
+    }
+    
+    .value-item,
+    .pain-item,
+    .testimonial {
+        padding: 1.5rem;
+    }
+    
+    .pricing-summary {
+        padding: 2rem;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Pulse Animation for CTAs */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+    }
+    50% {
+        box-shadow: 0 12px 35px rgba(255, 107, 107, 0.5);
+    }
+    100% {
+        box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+    }
+}
+
+.cta-button {
+    animation: pulse 2s infinite;
+}
+
